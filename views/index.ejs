@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link href="css/main.css" rel="stylesheet">
+  <script src="js/animate.js"></script>
+  <script src="js/contact.js"></script>
+  <title>McKade Hermansen</title>
+</head>
+
+<body>
+<div id="page" onload="createXAxis();">
+
+  <div id="header">
+    <div class="title">
+      <h1 class="titleText">McKade Hermansen</h1>
+    </div>
+    <div class="nav">
+      <div class="navSkills"><p id="navSkills">Skills</p></div>
+      <div class="navContact"><p id="navContact">Contact</p></div>
+    </div>
+  </div>
+  <div id="index">
+    <div class="mainImage">
+      <img src="images/mckadeIcon.jpg" alt="Photo of McKade" id="mckadeIcon"></img>
+    </div>
+    <div class="tagLine">
+      <h1 class="tagLineHead">McKade Hermansen</h1>
+      <h3 class="tagLineOverview">Software Engineer - Web Developer</h3>
+      <div class="callToAction">
+      </div>
+    </div>
+  </div>
+
+  <div id="skills">
+    <div class="skillsTitle">
+      <h1 class="mySkills">My Skills</h1>
+        <a href="docs/McKade-Resume.docx" class="resume" >Full Resume Here</a></br>
+    </div>
+    <div class='graph'>
+      <div class="yAxis">
+        <p class="expert">Expert</p>
+        <p class="proficiant">Proficiant</p>
+        <p class="experiance">Experiance with</p>
+      </div>
+      <div class="dataSet">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+        <div class="bars" id="bar4"></div>
+      </div>
+      <div class="xAxis">
+        <p class="xAxistext" id="xAxis1">C++ </p>
+        <p class="xAxistext" id="xAxis2">HTML, CSS </p>
+        <p class="xAxistext" id="xAxis3">PHP, Javascript, JQuery, Python </p>
+        <p class="xAxistext" id="xAxis4">Perl</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <h2 class="contactMe">Contact Me</h2>
+    <form id="contactMeForm" action="/" method="post">
+        <div class="contactFormCol1" value="1">
+        <div class="contactRow" value="1">
+          <input id="firstName" class="input" type="text" placeholder="First Name" name="first" size="30" /></br>
+          <input id="lastName" class="input" type="text" placeholder="Last Name" name="last" size="30"></br>
+        </div>
+        <div class="contactRow" value="2">
+          <input id="email" class="input" type="text" placeholder="Email" name="email" size="30"></br>
+        </div>
+        <div class="contactRow" value="3">
+          <input id="confirmEmail" class="input" type="text" placeholder="Confirm Email" size="30"></br>
+        </div>
+        </div>
+        <div class="contactFormCol2" value="4">
+          <textarea id="message" class="input" form="contactMeForm" rows="4" cols="50" name="message" placeholder="Message"></textarea></br>
+        </div>
+    </form>
+    <input id="submitButton" form="contactMeForm" type="submit" value="Send email" />
+  </div>
+
+  <div id="footer">
+    <div class="footerNav">
+      <div class="footerNavItem"><p id="footerNavItemSkills">Skills</p></div>
+      <div class="footerNavItem"><p id="footerNavItemContact">Contact</p></div>
+    </div>
+    <div class="socialIcons">
+      <a href="https://www.facebook.com">
+        <img class="social" alt="facebook logo" src="images/facebook.svg" />
+      </a>
+      <a href="https://www.instagram.com">
+        <img class="social" alt="instagram logo" src="images/instagram.svg" />
+      </a>
+      <a href="https://www.twitter.com">
+        <img class="social" alt="twitter logo" src="images/twitter.svg" />
+      </a>
+    </div>
+  </div>
+
+</div>
+<body>
